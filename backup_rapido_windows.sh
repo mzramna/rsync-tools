@@ -21,6 +21,7 @@
 ###################### ex: log="$HOME/LOG/BACKUP" #####################################
 #######################################################################################
 
+#########executar,necessário para o funcionamento do sistema de logs ##################
 if [ -z ${var+x} ]; then execute_log="--log-file=$log_output";else execute_log="";fi 
 
 rsync -airu --compress-level=9 -- remove-source-files --no-links $mount_point/Windows.old*/Users/ $mount_point/Users/ $dest/backup/ --exclude=AppData --exclude=NTUSER $execute_log
