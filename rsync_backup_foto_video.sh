@@ -8,6 +8,8 @@
 ###################### ex: log="$HOME/LOG/BACKUP" #################################
 ###################################################################################
 
+#########executar,necessário para o funcionamento do sistema de logs ##############
+
 if [ -z ${var+x} ]; then execute_log="--log-file=$log_output";else execute_log="";fi 
 
 regex_image_video=".*\.\(gif\|jpe?g\|tiff?\|png\|webp\|bmp\|jpg\|mov\|avi\|wmv\|flv\|rmvb\|3gp\|mp4\|mpg\|mpeg\|mkv\|webm\|flv\|vob\|ogg\|ogv\|drc\|gifv\|mng\|avi\|mov\|qt\|wmv\|yuv\|rm\|rmvb\|asf\|amv\|mp4\|m4v\|m\?v\|svi\|3gp\|flv\|f4v\)"
